@@ -1,0 +1,83 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    /* zilla-slab-300 - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Zilla Slab';
+        font-style: normal;
+        font-weight: 300;
+        src: url('fonts/zilla-slab-v11-latin-300.eot'); /* IE9 Compat Modes */
+        src: url('fonts/zilla-slab-v11-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/zilla-slab-v11-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/zilla-slab-v11-latin-300.woff') format('woff'), /* Modern Browsers */
+            url('fonts/zilla-slab-v11-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('fonts/zilla-slab-v11-latin-300.svg#ZillaSlab') format('svg'); /* Legacy iOS */
+    }
+
+    /* zilla-slab-regular - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Zilla Slab';
+        font-style: normal;
+        font-weight: 400;
+        src: url('fonts/zilla-slab-v11-latin-regular.eot'); /* IE9 Compat Modes */
+        src: url('fonts/zilla-slab-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/zilla-slab-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/zilla-slab-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+            url('fonts/zilla-slab-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('fonts/zilla-slab-v11-latin-regular.svg#ZillaSlab') format('svg'); /* Legacy iOS */
+    }
+
+    /* zilla-slab-500 - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Zilla Slab';
+        font-style: normal;
+        font-weight: 500;
+        src: url('fonts/zilla-slab-v11-latin-500.eot'); /* IE9 Compat Modes */
+        src: url('fonts/zilla-slab-v11-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/zilla-slab-v11-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/zilla-slab-v11-latin-500.woff') format('woff'), /* Modern Browsers */
+            url('fonts/zilla-slab-v11-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('fonts/zilla-slab-v11-latin-500.svg#ZillaSlab') format('svg'); /* Legacy iOS */
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 100vh;
+        background-color: #000;
+        color: #fff;
+        font-family: 'Zilla Slab', serif;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 800px;
+        padding: 0 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 10rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+    
+    @media (min-width: 768px) {
+        p {
+            font-size: 2rem;
+        }
+    }
